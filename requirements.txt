@@ -5,3 +5,5 @@ owslib
 streamlit
 geohey
 xarray
+folium
+rasterio
