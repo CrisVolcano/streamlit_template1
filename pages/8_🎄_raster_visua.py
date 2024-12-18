@@ -1,8 +1,6 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
 import os
-import xarray as xr
-
 
 st.set_page_config(layout="wide")
 
@@ -36,7 +34,7 @@ else:
         raster1,
         layer_name="VH Polarization",
         vmin=0,
-        vmax=0.1,
+        vmax=0.5,
     )
 
     # Agregar el raster VV con rango de valores [0, 0.1]
@@ -44,9 +42,10 @@ else:
         raster2,
         layer_name="VV Polarization",
         vmin=0,
-        vmax=0.5,
+        vmax=0.1,
     )
 
+ 
     # Mostrar control de capas para activar/desactivar las capas
     m.add_layer_control()
 
