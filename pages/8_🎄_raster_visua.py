@@ -1,6 +1,8 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
 import os
+import xarray as xr
+
 
 st.set_page_config(layout="wide")
 
