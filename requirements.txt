@@ -7,4 +7,3 @@ geohey
 xarray
 folium
 rasterio
-tilelive
