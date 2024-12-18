@@ -22,7 +22,7 @@ with st.expander("See source code"):
         after = "https://github.com/CrisVolcano/streamlit_template1/releases/download/tag-1/2001_RF.tif"
 
         m.split_map(
-            left_layer="before", right_layer="after"
+            left_layer=before, right_layer= after
         )
       
 
