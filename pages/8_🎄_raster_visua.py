@@ -30,22 +30,29 @@ else:
     m = leafmap.Map()
 
     # Agregar el raster VH con rango de valores [0, 0.5]
-    m.add_raster(
+    m.add_layer(
         raster1,
         layer_name="VH Polarization",
+        colormap="Blues",
         vmin=0,
         vmax=0.5,
     )
 
     # Agregar el raster VV con rango de valores [0, 0.1]
-    m.add_raster(
+    m.add_layer(
         raster2,
         layer_name="VV Polarization",
+        colormap="Greens",
         vmin=0,
         vmax=0.1,
     )
 
- 
+    # Añadir leyenda personalizada
+    m.add_legend(title="Raster Visualization", legend_dict={
+        "VH Polarization": "blue",
+        "VV Polarization": "green"
+    })
+
     # Mostrar control de capas para activar/desactivar las capas
     m.add_layer_control()
 
