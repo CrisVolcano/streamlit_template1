@@ -8,3 +8,5 @@ xarray
 folium
 rasterio
 matplotlib
+localtileserver
+rio-tiler

@@ -18,7 +18,7 @@ st.title("Visor de raster propios prueba 1")
 
 # Colores para valores específicos
 colors = ['white', '#7a982f', 'green', 'yellow', 'orange', 'blue', 'red']
-custom_cmap = ListedColormap(colors)
+#custom_cmap = ListedColormap(colors)
 
 legend = {
     "No Data": "white",
@@ -38,7 +38,7 @@ with st.expander("See source code"):
         #after = "https://github.com/CrisVolcano/streamlit_template1/releases/download/tag-1/2001_RF.tif"
 
         # Añadir capas raster con colormap personalizado
-        m.add_raster(clasi_uso, bands=1, palette=custom_cmap, layer_name="Clasificacion")
+        m.add_raster(clasi_uso, bands=1, palette=colors, layer_name="Clasificacion")
        # m.add_raster(after, bands=1, palette=custom_cmap, layer_name="After")
 
        # m.split_map(
