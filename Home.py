@@ -15,7 +15,7 @@ logo = "https://i.gifer.com/embedded/download/zqE.gif"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Streamlit for Geospatial Applications")
+st.title("Prueba de apps de Cris demo1 puto el que lo lea")
 
 st.markdown(
     """
