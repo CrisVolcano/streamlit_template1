@@ -15,7 +15,7 @@ logo = "https://i.gifer.com/embedded/download/zqE.gif"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Prueba de apps de Cris demo1 puto el que lo lea")
+st.title("Prueba de apps de Cristian Aguilar")
 
 st.markdown(
     """
@@ -35,6 +35,17 @@ markdown = """
 
 st.markdown(markdown)
 
+# Opciones de mapas base
+basemaps = {
+    "OpenStreetMap": "OpenStreetMap",
+    "Satellite": "SATELLITE",
+    "Terrain": "TERRAIN",
+    "ESRI Satellite": "ESRI_Imagery"
+}
+
+selected_basemap = st.sidebar.selectbox("Select a basemap", list(basemaps.keys()))
+
+# Crear y mostrar el mapa
 m = leafmap.Map(minimap_control=True)
-m.add_basemap("TERRAIN")
+m.add_basemap(basemaps[selected_basemap])
 m.to_streamlit(height=500)
